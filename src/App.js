@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import Header from './Components/Header'
+import Section2 from './Components/Section2'
+import Section3 from './Components/Section3'
+import ProductsSection from './Components/ProductsSection';
+import SubscribeSection from './Components/SubscribeSection';
+import Footer from './Components/Footer';
 
-function App() {
+import './App.css'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Section2 />
+      <Section3 />
+      <ProductsSection/>
+      <SubscribeSection />
+      <Footer />
+
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
